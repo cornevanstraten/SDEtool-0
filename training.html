@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- http://sdetool.nl/sde_spreadsheet.xlsx -->
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Met SDEtool.nl berekent u eenvoudig de financiële haalbaarheid van uw zonneproject met SDE+ subsidie.">
+    <meta name="keywords" content="sdetool, sde, sde+, berekenen, terugverdientijd, business case, subsidie, zonnepanelen, zon-pv, financieren, duurzaam, energie">
+
+    <meta name="author" content="Balance Financial Incentives">
+
+    <title>SDEtool.nl</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105806256-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/"><span class="fa fa-bar-chart" aria-hidden="true" style="color: #3498db"></span><span id="navtitel">  SDEtool.nl</span></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Bereken Business Case</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Aanvraagproces</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#myModal1">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Modal -->
+    <div id="myModal1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Neem contact met ons op</h4>
+          </div>
+          <div class="modal-body">
+            <p>Neem contact op met Balance Financial Incentives:</p>
+            <ul>
+              <li>Bel <a href="tel:+31 20 676 3993">
+                <i class="fa fa-phone"></i></a> 020 676 3993
+              </li>
+              <li>Voor meer informatie, ga naar <a href="https://www.balance.nl/expertise/subsidies">Balance.nl</a>
+              </li>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Header -->
+
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <h1 class="intro-lead-in">SDE+ training</h1>
+          <h2 class="intro-heading">leer in één avond hoe je subsidie aanvraagt</h2>
+          <a class="btn btn-xl js-scroll-trigger" href="#workshop">meer informatie</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Workshop body -->
+    <section id="workshop" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">SDE+ training</h2>
+            <h3 class="section-subheading text-muted">Leer in één avond van de experts hoe je deze subsidie aanvraagt</h3>
+            <div class="container col-md-9 col-sm-12 form-container">
+              <div class="talleft">
+                <p><strong>Bent u van plan om een zonnepaneleninstallatie te plaatsen? Wilt u hiervoor zelf subsidie aanvragen, maar heeft u vraagtekens bij de <a href="https://www.rvo.nl/sites/default/files/2018/12/Tabel%20Zon%20SDE%20voorjaar%202019.pdf">SDE+-regeling 2019</a> en het aanvraagproces? Dan is deze training precies wat u zoekt!</strong></p>
+
+                <p>De subsidieregeling die beschikbaar is voor zonnepaneleninstallaties, de <a href="https://www.rvo.nl/sites/default/files/2018/12/Tabel%20Zon%20SDE%20voorjaar%202019.pdf">SDE+</a>, is over de jaren heen bijzonder complex geworden.</p>
+
+                <ul>
+                  <li>Wat zijn <a href="https://www.rvo.nl/sites/default/files/2018/12/Tabel%20Zon%20SDE%20voorjaar%202019.pdf">basisbedrag, correctiebedrag en basisenergieprijs?</a></li>
+                  <li>Hoe bereken ik de <strong> terugverdientijd</strong> en het rendement in mijn situatie?</li>
+                  <li>Op welk bedrag moet ik inzetten voor de meeste subsidie tegen <strong>een acceptabel risico?</strong></li>
+                  <li>Wat moet ik geregeld hebben voor ik subsidie aanvraag?</li>
+                </ul>
+
+              </div>
+
+                              <img src="img/image001.png" class=" col-md-8 text-center" alt="correctiebedragen">
+
+              <div class="talleft">
+                <br>
+                <br>
+
+                <p>Daarnaast is de <strong>risicofactor</strong> een overweging. Immers, als u een fout maakt vist u achter het net, en loopt u vele tienduizenden euro’s mis. U zou een dure adviseur in kunnen schakelen, maar gelukkig is er nu een betaalbaar alternatief:</p>
+
+                </div>
+<br>
+
+                <blockquote><em>Leer in één avond van de experts hoe je zelf SDE+ aanvraagt.</em> </blockquote>
+<br>
+              <div class="talleft">
+                <p>Tijdens deze training leren de SDE+ experts van <a href="https://www.balance.nl/expertise/subsidies/">Balance</a> u de kneepjes van het vak. Wij leren u precies hoe de SDE+-regeling werkt, inclusief de veranderingen die er zijn doorgevoerd in 2019. Daarnaast leert u geheel zelfstandig de business case van uw eigen installatie te berekenen, het risicoprofiel te bepalen en laten we u in detail zien <strong>hoe het aanvraagproces werkt.</strong></p>
+
+                <p>De training vindt plaats op <strong>11 maart</strong>, één dag vóór de opening van de eerste SDE-inschrijfronde, zodat wat u geleerd heeft nog vers in het geheugen zit als u het in de praktijk gaat toepassen. </p>
+
+                <p><strong>Resultaat:</strong></p>
+                <ol>
+                  <li>U bent expert in het berekenen van business cases omtrent zonne-energie</li>
+                  <li>U bent in staat om zelf SDE+-subsidie aan te vragen</li>
+                  <li>Bij gunning van de subsidie krijgt u financiering om uw PV-installatie te realiseren.</li>
+                </ol>
+<br>
+                <p><strong>Programma:</strong></p>
+
+                <p>
+                    19:00 – 19:30 &nbsp &nbsp &nbsp &nbsp Inloop
+                    <br>19:30 – 20:15 &nbsp &nbsp &nbsp &nbsp 		De basisprincipes van de SDE+-regeling
+                    <br>20:15 – 20:30 &nbsp &nbsp &nbsp &nbsp 		Pauze
+                    <br>20:30 – 21:15 &nbsp &nbsp &nbsp &nbsp 		Berekenen Business Case en aanvraagproces
+                    <br>21:15 – 21:45 &nbsp &nbsp &nbsp &nbsp 		Afronding en borrel
+                </p>
+<br>
+                <p><strong>Informatie:</strong></p>
+
+                <p>De training vindt plaats 11 maart 2019, op het kantoor van Balance te Rotterdam, Westerlaan 20A. U kunt zich melden bij de welkomstbalie.</p>
+
+                <p>De kosten van de training bedragen € 250,- exclusief BTW. </p>
+<br>
+<br>
+                <p><em>*let op, deze training biedt plaats aan <u>maximaal 15 personen</u>. Dit maximum is vastgesteld, omdat wij zorg willen dragen voor een persoonlijke benadering met een zo hoog mogelijk resultaat. Vol = Vol. </em></p>
+
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="aanmelden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Aanmelden</h2>
+            <h3 class="section-subheading text-muted">of bel direct naar Balance Financial Incentives: +31 20 676 3993</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="aanmeldForm" action="mailtraining.php" method="post">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" name="naam" type="text" placeholder="uw naam *" required data-validation-required-message="Geef alstublieft uw naam op.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" name="email" type="email" placeholder="e-mail *" required data-validation-required-message="Geef alstublieft uw e-mailadres op.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="tel" name="tel" type="tel" placeholder="Telefoonnummer *" required data-validation-required-message="Geef alstublieft uw telefoonnummer op.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="bedrijfsnaam" name="bedrijfsnaam" type="text" placeholder="bedrijfsnaam *" required data-validation-required-message="Geef alstublieft uw bedrijfsnaam op.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="kvk" name="kvk" type="text" placeholder="kvk-nummer *" required data-validation-required-message="Geef alstublieft uw kvk-nummer op.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                  <input id="sendMessageButton" class="btn btn-xl btn-block" type="submit" value="verzenden">
+                    <!-- <input class="form-control" id="btw" type="text" placeholder="BTW-nummer (optioneel)">
+                    <p class="help-block text-danger"></p> -->
+                  </div>
+                </div>
+                <!-- <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Uw bericht *" required data-validation-required-message="Bijvoorbeeld: ik wil hulp bij het aanvragen van SDE+ subsidie."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div> -->
+                <!-- </div> -->
+                <!-- <div class="clearfix"></div> -->
+                <!-- <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-xl" type="submit">Verzenden</button>
+                </div> -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">&copy; <a href="https://www.balance.nl/expertise/subsidies">Balance Financial Incentives</a> 2019</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="tel:+31 20 676 3993">
+                  <i class="fa fa-phone"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:cornevanstraten@balance.nl">
+                  <i class="fa fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                Tel: <a href="tel:020 676 3993"><strong>020 676 3993</strong></a>
+              </li>
+              <!-- <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+    <script type="text/javascript" src="js/SDEproject2019.js">    </script>
+  </body>
+
+</html>
